@@ -1,5 +1,5 @@
-import { LoggerService } from '@app/shared/services/logger.service';
-import { AuthService } from '@app/core/services/auth.service';
+import { LoggerService } from '../../services/logger.service';
+import { AuthService } from '../../../core/services/auth.service';
 import { Component } from '@angular/core';
 
 @Component({

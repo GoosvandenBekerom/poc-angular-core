@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ContactRoutingModule } from './contact-routing.module';
 import { ContactComponent } from './components/contact/contact.component';
-import { SharedModule } from '@app/shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [

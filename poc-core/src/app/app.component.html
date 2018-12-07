@@ -1,6 +1,6 @@
 <ul>
   <li><a [routerLink]="'dashboard'">Dashboard</a></li>
   <li><a [routerLink]="'contact'">Contact</a></li>
-  <li *ngIf="authService.isLoggedIn"><button (click)="authService.logout()">Logout</button></li>
+  <!-- <li *ngIf="authService.isLoggedIn"><button (click)="authService.logout()">Logout</button></li> -->
 </ul>
 <router-outlet></router-outlet>

@@ -1,8 +1,6 @@
-import { SharedModule } from './shared/shared.module';
-import { CoreModule } from './core/core.module';
+import { SharedModule } from 'poc-core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,10 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     AppRoutingModule,
-    CoreModule,
-    SharedModule.forRoot(),
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

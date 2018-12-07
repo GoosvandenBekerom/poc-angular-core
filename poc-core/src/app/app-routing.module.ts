@@ -3,10 +3,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardModule } from './views/dashboard/dashboard.module';
 
-const dashboardEntry = () => DashboardModule;
-const contactEntry = () => ContactModule;
+export function dashboardEntry() {
+  return DashboardModule;
+}
 
-const routes: Routes = [
+export function contactEntry() {
+  return ContactModule;
+}
+
+export const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: dashboardEntry
